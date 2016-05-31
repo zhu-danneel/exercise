@@ -1,0 +1,16 @@
+*{padding: 0;margin: 0;}
+.show{min-margin-top: 70px;min-height: 600px;}
+.out ul{list-style: none;}
+.out{max-width: 1180px;
+	height: 600px;
+	margin: 10px auto;
+	position: relative;}
+.out .img li{position: absolute;top: 0;left: 0;display: none;}
+.out .btns{position: absolute;bottom: 20px;left: 0;font-size: 0;text-align: center;width: 100%;}
+.out .btns li{width: 20px;height: 20px;background: #666;color: #fff;text-align: center;line-height: 20px; border-radius: 50%;display: inline-block;font-size: 16px;margin: 0 3px;cursor: pointer;}
+.out .btns li.active{background: #a00}
+
+.out .btn{position: absolute;top: 50%;margin-top: -50px;width: 40px;height: 60px;background: rgba(0,0,0,0.5);color: #fff; text-align: center;line-height:45px;font-size: 40px; display: none;cursor: pointer;border-radius: 30px;}
+.out:hover .btn{display: block;}
+.out .left{left: 0;}
+.out .right{right: 0}

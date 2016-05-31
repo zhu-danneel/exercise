@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title> EASY | 你的软件合作者 :: home</title>
+	<link type="image/x-icon" href="imgs/icon.jpg" rel="icon">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8 "/>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<!-- 小屏幕自适应-->
+	<script type="application/x-javascript"> 
+	addEventListener("load", function() { 
+		setTimeout(hideURLbar, 0); 
+	}, false); 
+	function hideURLbar(){ window.scrollTo(0,1); } 
+	</script>
+
+
+	<!-- footer css-->
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<!-- show css-->
+	<link rel="stylesheet" type="text/css" href="css/show.css">
+	<!-- 应用框架-->
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- btcss-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<!--show的script-->
+	<script type="text/javascript">
+		$(function(){
+			//小按钮播放
+			$(".img li").eq(0).show();
+			$(".btns li").eq(0).addClass("active");
+			$(".btns li").mouseover(function(){
+				$(this).addClass("active").siblings().removeClass("active");
+				var index = $(this).index();
+				$(".img li").eq(index).stop().fadeIn(500).siblings().stop().fadeOut(500);
+			})
+			//自动轮放
+			var i = 0;
+			var sec = setInterval(move,2000);
+			function move(){
+				i++;
+				if (i == 5){
+					i = 0;
+				}
+				$(".btns li").eq(i).addClass("active").siblings().removeClass("active");
+				$(".img li").eq(i).fadeIn(500).siblings().fadeOut(500);
+			}
+
+			function move_(){
+				i--;
+				if (i == -1){
+					i = 5;
+				}
+				$(".btns li").eq(i).addClass("active").siblings().removeClass("active");
+				$(".img li").eq(i).fadeIn(500).siblings().fadeOut(500);
+			}
+			//手动点击前后播放
+			$(".out .left").click(function(){
+				move_();
+			})
+			$(".out .right").click(function(){
+				move();
+			})
+
+		})
+	</script>
+	<!--show的script-->
+
+<style type="text/css">
+
+.container h1{color:#55dbfc;text-align: center;margin-top: 100px;}
+.container h3{color:#55dbfc;text-align: center;}
+.container row{margin-bottom: 50px;}
+.thumbnail{border: none;}
+
+.brif{background:#252829;min-height: 500px;min-height: 750px; margin-top: 100px;margin-bottom: 80px;}
+.media-body{color: gray;font-size: 16px;}
+.media-body h2{color:#55dbfc;text-align: center;}
+.media-heading{color: white;}
+.fontalign{max-width: 900px;}
+.play h1{color:#55dbfc;text-align: center;margin-top: 60px;margin-bottom: 30px;}
+.play .row{margin-bottom: 150px;}
+.col-md-4 .caption{color: gray;}
+.col-md-3{margin-top: 80px;}
+.col-md-3 .caption{color: gray;margin-top: 30px;}
+.col-md-3 img{border-radius: 5px;}
+.media-object{margin-top: 50px;}
+</style>
+	
+</head>
+
+
+<body lang="en">
+	<!-- 导航栏 -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" >
+  		<div class="container">
+    		<!--图标 -->
+    		<div class="navbar-header" >
+      			<a  href="file:///Users/Danneels/Desktop/bs/home.html" >
+        			<img alt="EASY" src="imgs/logo.png">
+      			</a>
+    		</div>	
+    		<!--图标 -->
+      		<!--导航右边 -->
+      		<ul class="nav navbar-nav navbar-right">
+      			<li ><a href="file:///Users/Danneels/Desktop/bs/home.html">HOME</a></li>
+      			<li ><a href="file:///Users/Danneels/Desktop/bs/aboutus.html">ABOUT</a></li>
+      			<li ><a href="file:///Users/Danneels/Desktop/bs/contactus.html">CONTACT</a></li>
+      			<a href="file:///Users/Danneels/Desktop/bs/logsell.html"><button type="button" class="btn btn-info navbar-btn">Staff</button></a>
+      			<a href="file:///Users/Danneels/Desktop/bs/logman.html"><button type="button" class="btn btn-primary navbar-btn">Managers</button></a>
+      		</ul>
+      		<!--导航右边 -->
+		</div><!-- container-->
+	</nav>
+	<!-- 导航栏 -->
+
+	<!--第一部分show-->
+	<div class="show">
+	<div class="jumbotron">
+	<div class="out">
+		<ul class="img">
+			<li><img src="imgs/0.jpg"></li>
+			<li><img src="imgs/1.jpg"></li>
+			<li><img src="imgs/2.jpg"></li>
+			<li><img src="imgs/3.jpg"></li>
+			<li><img src="imgs/4.jpg"></li>
+		</ul>
+		<ul class="btns">
+			<li class="active">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ul>
+		<div class="left btn"><</div>
+		<div class="right btn">></div>
+		</div>
+	</div>
+	</div>
+	<!--第一部分show-->
+
+	<!--优势-->
+	<div class="container">
+	<h1 >选择EASY剧院</h1>
+	<h3 >WHY?</h3>
+		<div class="row" >
+  			<div class="col-sm-6 col-md-4">
+  			<div class="thumbnail">
+     				<img src="imgs/why1.png" alt="饮食方便">
+      				<div class="caption" >
+        				<h3 >美食诱惑</h3>
+        				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这里不仅饮食方便，就近的就有西安邮电大学两大食堂 -- 旭日苑以及美食广场。再不满足，师大西外食堂任你挑。除此之外，西安有扬名海外的回民街，这条著名的小吃街里面，你不仅能吃到各种独特风味的小吃，还能买到各具特色的名族饰品。</p>
+      				</div>
+      		</div>
+  			</div>
+  			<div class="col-sm-6 col-md-4" >
+  			<div class="thumbnail">
+     				<img src="imgs/why2.png" alt="全球交流">
+      				<div class="caption">
+        				<h3>国际交流</h3>
+        				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;剧院的设计以及良好的运营理念吸引了来自海内外的众多观众。为了迎接这一盛况，我们有咸阳国际机场以及宽广的公路建设以及便利的地铁公交线路供你选择。总之，连飞机也能行驶在路上，你就说行不行。</p>
+      				</div>
+      				</div>
+  			</div>
+  			<div class="col-sm-6 col-md-4" >
+  			<div class="thumbnail">
+     				<img src="imgs/why3.png" alt="居住方便">
+      				<div class="caption">
+        				<h3>行旅便利</h3>
+        				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;附近旅馆众多，不管是小清新的各种主题青年旅馆，还是商务范的高大上国际酒店，有有有，全都有。价格实惠，寻找方便。居住环境优良，要是居住在市区还有机会一睹西安夜景。</p>
+      				</div>
+      				</div>
+  			</div>
+  		</div>
+	</div>
+	<!--优势-->
+
+	<!--简介-->
+	<div class="jumbotron brif" >
+	<div class="container" >
+	<div class="media" align="center">
+      	<img  src="imgs/6.jpg" alt="剧院简介">
+  		<div class="media-body" >
+  			<h2 >EASY剧院--你的选择</h2>
+    		<h4 class="media-heading">EASY剧院简介</h4>
+    		<div class="fontalign">
+    			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EASY大剧院位于陕西省西安市西安邮电大学长安校区，是亚洲最大的剧院综合体。中国国家表演艺术的最高殿堂，中外文化交流的最大平台，中国文化创意产业的重要基地。
+    			</br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从EASY大剧院第一次立项到正式运营，设计方案经历了三次竞标两次修改，总造价30.67亿元。由法国建筑师保罗·安德鲁主持设计，设计方为法国巴黎机场公司。占地11.89万平方米，总建筑面积约16.5万平方米，其中主体建筑10.5万平方米，地下附属设施6万平方米。
+				</br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;作国际文明大都市西安的地标性建筑，EASY大剧院造型独特的主体结构，一池清澈见底的湖水，以及外围大面积的绿地、树木和花卉，不仅极大改善了周围地区的生态环境，更体现了人与人、人与艺术、人与自然和谐共融、相得益彰的理念。
+				</br>
+			</div>
+			<h4 class="media-heading" >设计理念</h4>
+			<div class="fontalign">
+    			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EASY这座“城市中的剧院、剧院中的城市”以一颗献给新世纪的超越想象的“湖中明珠”的奇异姿态出现。大剧院要表达的是内在的活力，是在外部宁静笼罩下的内部生机。一个简单的“蛋壳”，里面孕育着生命，大剧院代表了一个时代的结束与另一个新的时代的开始。
+    		</div>
+  		</div>
+  		</div>	
+  	</div>
+  	</div>
+	</div>
+	<!--简介-->
+
+	<!-- 剧场-->
+	<div class="container play">
+		<h1 >EASY剧院 -- 好选择</h1>
+		<div class="row">
+  			<div class="col-sm-6 col-md-3" align="center">
+     				<img src="imgs/choose1.jpg"  alt="饮食方便" >
+      				<div class="caption">
+        				<h3 >娇小普通型</h3>
+        				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更小的空间，更好的放映效果。是一个适合人数较少的放映情况。同时也适合接待团队放映开会。以及小型旅行团作介绍总结工作。</p>
+      				</div>
+  			</div>
+  			<div class="col-sm-6 col-md-3" align="center">
+     			<img src="imgs/choose2.jpg" alt="全球交流">
+      			<div class="caption">
+        			<h3>宏伟欧式型</h3>
+        			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;采用欧式建筑的宏伟风格，本身就是一个宏伟的观赏品。适合放映大型巨片。同时漂亮的设计，也是一个与交响乐很融洽的设计，可以演出交响乐的不二选择。拱形的天花设计，给你带来别样的体验。</p>
+      			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-3" align="center">
+     				<img src="imgs/choose3.jpg" alt="居住方便">
+      				<div class="caption" >
+        				<h3>开敞广阔型</h3>
+        				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这种剧场适合大中型的剧场播放，同时也是现场剧上映的好选择，拥有自然光和完美的舞台制造灯光，能带来观众不一样的体验。</p>
+      				</div>
+  			</div>
+  			<div class="col-sm-6 col-md-3" align="center">
+     				<img src="imgs/choose4.jpg" alt="居住方便">
+      				<div class="caption">
+        				<h3>简洁便利型</h3>
+        				</br>
+        				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这种简洁型的剧场也采用了欧式看台的效果，颜色上采用较为明亮的白色和墨绿色作为背景。简洁大方，也是一个很好的选择。</p>
+      				</div>
+  			</div>
+  		</div>
+	</div>
+	<!-- 剧场-->
+
+	<!--底端-->
+	<div class="jumbotron foot"s> 
+	<div class="footer" >
+		<div class="container">
+			<div class="touch-top heading" >
+				<h3>详细信息：</h3>
+			</div>
+			<div class="touch-bottom">
+				<p>陕西省西安市西安邮电大学</p>
+				<h6>邮政编码: 710121</h6>
+				<p>联系我们：</p>
+				<ul>
+					<li><a href="file:///Users/Danneels/Desktop/bs/contactus.html"><img src="imgs/5.png"></a></li>
+				</ul>
+			</div>
+			<div class="footer-top">
+				<p class="footer-class" ><a href="file:///Users/Danneels/Desktop/bs/home.html"  > ™® EASY</a> | 你的软件合作者  </p>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!--底端-->
+	
+
+</body>
+</html>
