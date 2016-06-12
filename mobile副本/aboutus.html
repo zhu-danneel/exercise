@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+	<link type="image/x-icon" href="imgs/icon.jpg" rel="icon">
+	<title> EASY | 你的软件合作者 :: home</title>
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+<style type="text/css">
+.content, .content * {
+	font: 12px;
+	color: #777;
+	font-weight: 300;
+}
+a  {
+	color: #AEAEAE;
+	text-decoration: none;
+}
+a:link {
+	color: white;
+	text-decoration: none;
+}
+a:visited {
+	color: white;
+	text-decoration: none;
+}
+a:hover {
+	cursor: pointer;
+}
+h1 {
+	color: #888;
+	font-size: 26px;
+	margin: 15px 0px;
+	position: relative;
+	text-align: center;
+	font-family: 'Microsoft YaHei', sans-serif;
+	font-weight: 300;
+}
+h2 {
+	color: #888;
+	font-size: 23px;
+	margin: 13px 0px;
+	position: relative;
+	text-align: center;
+	font-family: 'Microsoft YaHei', sans-serif;
+	font-weight: 300;
+}
+h3 {
+	font-size: 20px;
+	position: relative;
+	text-align: center;
+	font-weight: 300;
+}
+h4 {
+	color: #888;
+	font-size: 18px;
+	margin: 9px 0px;
+	position: relative;
+	text-align: center;
+	font-family: 'Microsoft YaHei', sans-serif;
+	font-weight: 300;
+}
+h5 {
+	color: #888;
+	font-size: 16px;
+	margin: 7px 0px;
+	position: relative;
+	text-align: center;
+	font-family: 'Microsoft YaHei', sans-serif;
+	font-weight: 300;
+}
+
+body  {
+	font-weight: 200;
+	background-color: #FFF;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	height: 100%;
+	line-height: 150%;
+}
+table {
+	margin: 2%;
+	width: 96%;
+	border-radius: 2px;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	text-align: center;
+	font-size: 14px;
+}
+th {
+	font-weight: 500;
+	padding: 8px;
+	width: 20%;
+}
+td {
+	padding: 4px 10px;
+	height: 40px;
+	width: 20%;
+}
+
+button, .button {
+	font-size: 16px;
+	font-weight: 300;
+	margin: 4px 2%;
+	margin-bottom: 50px;
+	width: 96%;
+	height: 44px;
+	line-height: 36px;
+	float: left;
+	border: 0;
+	padding: 3px;
+	background-color: #57d6f5;
+	color: #FFF !important;
+	border-radius: 2px;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+button:hover, .button:hover {
+	margin-top: 5px;
+	line-height: 36px;
+	height: 43px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+button:disabled, .button:disabled {
+	background-color: #BBB;
+}
+
+fieldset {
+	display: block;
+	margin: 20px 1%;
+	margin-bottom: 40px;
+	padding: 0 auto;
+	padding: 15px 0;
+	border: 0;
+	border-top: 1px solid #DDD;
+	width: 98%;
+}
+
+legend {
+	display: table; 
+	min-width: 0px;
+	max-width: 70%;
+	position: relative;
+	margin: auto;
+	padding: 5px 20px;
+	font-size: 20px;
+	text-align: center;
+}
+
+br {
+	clear: both;
+}
+
+header {
+	width: 100%;
+	height: 55px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #1a1a1a;
+	position: relative;
+	margin: 0;
+}
+header  img {
+	display: inline;
+	position: relative;
+	margin: auto;
+	width: 140px;
+	height: 50px;
+}
+footer {
+	width: 100%;
+	height: 270px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #1a1a1a;
+	position: relative;
+	margin: 0;
+}
+footer  img {
+	display: inline;
+	position: relative;
+	margin: 20px;
+	width: 140px;
+	height: 50px;
+}
+footer h3,p,h6{
+	color: white;
+	margin: 0px;
+}
+#menu-bars {
+	width: 50px;
+	height: 50px;
+	background: center center no-repeat transparent;
+	background-image: url('./imgs/menu_bars.png');
+	box-shadow: none;
+	position: absolute;
+	top: 0;
+	left: 10px; 
+	border:	none;
+	cursor: pointer;
+	margin: 0;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+#menu-bars:hover {
+	top: 1px;
+}
+
+.st-content .content {
+	margin: 8px;
+	padding: 8px;
+	border-radius: 4px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+img {
+	vertical-align: top;
+}
+
+.st-menu ul  {
+	width: 100%;
+	max-height: 100%;
+	border-bottom: 1px solid #222;
+	overflow: auto;
+	padding: 0;
+	margin: 0;
+}
+.st-menu ul  h1 {
+	padding: 10px;
+	color: #FFF;
+}
+.st-menu ul > li  {
+	display: block;
+	float: none;
+	list-style: none;
+	position: relative;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #222;
+	padding: 0;
+	font-size: 15px;
+	text-align: left;
+	font-family: 'Microsoft YaHei', sans-serif;
+	font-weight: 300;
+}
+.st-menu ul > li a  {
+	letter-spacing: 1px;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	text-decoration: none;
+	color: #FFF;
+	text-transform: uppercase;
+	padding-left: 21%;
+	opacity: 0.8;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.st-menu ul > li a:hover {
+	color: #FFF;
+	background-color: #000;
+	opacity: 1;
+}
+.st-menu .selected  {
+	color: #FFF;
+	background-color: #000;
+	background-position: 5px center;
+	border-left: 5px solid #57d6f5;
+	font-weight: 400;
+	opacity: 1;
+}
+
+html,
+body,
+.st-container,
+.st-pusher,
+.st-content {
+	height: 100%;
+}
+.st-content,
+.st-content-inner {
+	position: relative;
+}
+.st-content {
+	overflow-y: scroll;
+}
+.st-container {
+	position: relative;
+	overflow: hidden;
+}
+.st-pusher {
+	position: relative;
+	left: 0;
+	z-index: 999;
+	height: 100%;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	background-color: #FFF;
+	box-shadow: 0px 0px 40px #000;
+}
+.st-pusher::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	background: rgba(0,0,0,0.6);
+	z-index: 10;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+.st-menu-open .st-pusher::after {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+.st-menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	visibility: hidden;
+	width: 200px;
+	height: 100%;
+	background-color: #111;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.st-menu::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	content: '';
+	opacity: 1;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+.st-menu-open .st-menu::after {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+.st-effect-4.st-menu-open .st-pusher {
+	-webkit-transform: translate3d(200px, 0, 0);
+	transform: translate3d(200px, 0, 0);
+}
+.st-effect-4.st-menu {
+	z-index: 1;
+	-webkit-transform: translate3d(-50%, 0, 0);
+	transform: translate3d(-50%, 0, 0);
+}
+.st-effect-4.st-menu-open .st-effect-4.st-menu {
+	visibility: visible;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.st-effect-4.st-menu::after {
+	display: none;
+}
+
+</style>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/idangerous.swiper-2.2.min.js"></script>
+    <script src="js/classie.js"></script>
+</head>
+
+<body>
+	<div id="st-container" class="st-container">
+		<nav class="st-menu st-effect-4">
+			<ul>
+				<li><img src="imgs/logo.png"><h2>你的软件合作者</h2></li>
+			  	<li><a class="ico home " href="index.html">EASY剧院</a></li>
+			  	<li><a class="ico services" href="logsell.html">使用登录</a></li>
+			  	<li><a class="ico login" href="logman.html">管理登录</a></li>
+			  	<li><a class="ico aboutus selected" href="aboutus.html">关于EASY</a></li>
+			  	<li><a class="ico contact" href="contact.html">联系我们</a></li>
+		  	</ul>
+		</nav>
+		<div class="st-pusher">
+			<div class="st-content">
+				<div class="st-content-inner">
+					<header>
+						<div id="st-trigger-effects">
+							<button data-effect="st-effect-4" id="menu-bars"></button>
+						</div>
+						<img src="imgs/logo.png">
+					</header>
+					<div class="content">
+						<fieldset class="text-center">
+							<legend align="center">EASY研发团队介绍</legend>
+  			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;做为创新型科技团队，拥有一个充满朝气、高素质、年轻化、专业化的研发团队，为公司蓬勃发展提供源源不断的活力与动力。
+  			</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;工本科以上科技人员占总人数的100%，软件技术人员占员工总数100%。除有常年外聘的专家顾问外，还汇聚了信息化管理领域的技术精英，具有丰富的行业经验，对慈善行业的发展和趋势有着深刻的认识和理解，为公益慈善机构统一信息服务平台的研究和开发提供了长期的、源源不断地支持。
+        	
+        	<h3>管理团队</h3>
+        	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EASY网络科技有限公司拥有一支具有10年以上的企业运营和管理经验的领导团队，他们在动态多变的商业环境中为EASY科技的发展指明了清晰的远景和方向。
+        	
+        	<h3>研发团队</h3>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们的核心骨干团队都来自于西安邮电大学，我们拥有强烈的创业梦想和共同愿望，一直在努力、奋斗、拼搏不息！
+						
+						</fieldset>
+						<fieldset class="text-center">
+							<legend align="center">现有成员</legend>
+							<table>
+							<tr>
+								<td><img class="center" src="imgs/mem1.png"/></td>
+								<td>王一两<br>耶耶耶耶✌️耶耶😢</td>
+							</tr>
+							<tr>
+								<td><img class="center" src="imgs/mem2.png"/></td>
+								<td>蒙玉航<br>哈哈哈😄哈哈</td>
+							</tr>
+							<tr>
+								<td><img class="center" src="imgs/mem3.png"/></td>
+								<td>周琪<br>嘻嘻嘻嘻😁嘻</td>
+							</tr>
+							<tr>
+								<td><img class="center" src="imgs/mem4.png"/></td>
+								<td>杨崇辉<br>哦哦哦哦😖哦</td>
+							</tr>
+						</table>
+						</fieldset>
+						<fieldset class="text-center">
+							<legend align="center">我们的擅长</legend>
+							<ul >
+								<li>JAVA分布式系统以及JAVA应用系统的解决方案、数据库分析等；</li>
+								</br>
+								<li>移动互联网应用解决方案，擅长于Andriod、IOS、PAD程序开发。</li>
+								</br>
+								<li>.net、网站建设、网络安全、通讯技术等；</li>
+								</br>
+								<li>各种各种，只有你想不到，没有我们做不到；</li>
+								</br>
+								<li>当然还有板砖技术</li>
+								</br>
+							</ul>
+						</fieldset>
+						<button><a href="contact.html" id="contact">CONTACT US  &raquo;</a></button>
+					</div>
+					<footer>
+						<img src="imgs/logo.png">
+						<h3>详细信息：</h3>
+						<p>陕西省西安市西安邮电大学</p>
+						<h6>邮政编码: 710121</h6>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/sidebarEffects.js"></script>
+	<script src="js/swipers.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>

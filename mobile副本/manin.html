@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+	<link type="image/x-icon" href="imgs/icon.jpg" rel="icon">
+	<title> EASY | 你的软件合作者 :: home</title>
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+<style type="text/css">
+.content, .content * {
+	font: 12px;
+	color: #777;
+	font-weight: 300;
+}
+a  {
+	color: #AEAEAE;
+	text-decoration: none;
+}
+a:link {
+	color: white;
+	text-decoration: none;
+}
+a:visited {
+	color: #BB2222;
+	text-decoration: none;
+}
+a:hover {
+	cursor: pointer;
+}
+h1 {
+	color: #888;
+	font-size: 26px;
+	margin: 15px 0px;
+	position: relative;
+	text-align: center;
+	font-family: 'Microsoft YaHei', sans-serif;
+	font-weight: 300;
+}
+h2 {
+	color: #888;
+	font-size: 23px;
+	margin: 13px 0px;
+	position: relative;
+	text-align: center;
+	font-family: 'Microsoft YaHei', sans-serif;
+	font-weight: 300;
+}
+h3 {
+	font-size: 20px;
+	position: relative;
+	text-align: center;
+	font-weight: 300;
+}
+h4 {
+	color: #888;
+	font-size: 18px;
+	margin: 9px 0px;
+	position: relative;
+	text-align: center;
+	font-family: 'Microsoft YaHei', sans-serif;
+	font-weight: 300;
+}
+h5 {
+	color: #888;
+	font-size: 16px;
+	margin: 7px 0px;
+	position: relative;
+	text-align: center;
+	font-family: 'Microsoft YaHei', sans-serif;
+	font-weight: 300;
+}
+
+body  {
+	font-weight: 200;
+	background-color: #FFF;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	height: 100%;
+	line-height: 150%;
+}
+table {
+	margin: 2%;
+	width: 96%;
+	border-radius: 2px;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	text-align: center;
+	font-size: 14px;
+}
+th {
+	font-weight: 500;
+	padding: 8px;
+	width: 20%;
+}
+td {
+	padding: 4px 10px;
+	height: 40px;
+	width: 20%;
+}
+
+input {
+	float: left;
+	width: 92%;
+	margin: 6px 2%;
+	font-size: 16px;
+	border-radius: 2px;
+	border: 0;
+	border-bottom: 1px solid #DDD;
+	background-color: #FFF;
+	color: #666;
+}
+textarea {
+	line-height: 200%;
+	float: left;
+	width: 92%;
+	resize: vertical;
+	padding: 10px 2%;
+	margin: 4px 2%;
+	font-size: 16px;
+	border-radius: 2px;
+	border: 0;
+	border-bottom: 1px solid #DDD;
+	background-color: #FFF;
+	color: #666;
+}
+textarea:focus, input:focus {
+	outline: 0;
+	border-color: #AAA;
+	color: #222;
+}
+button, .button {
+	font-size: 16px;
+	font-weight: 300;
+	margin: 4px 2%;
+	margin-bottom: 30px;
+	width: 96%;
+	height: 44px;
+	line-height: 36px;
+	float: left;
+	border: 0;
+	padding: 3px;
+	background-color: #57d6f5;
+	color: #FFF !important;
+	border-radius: 2px;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+button:hover, .button:hover {
+	margin-top: 5px;
+	line-height: 36px;
+	height: 43px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+button:disabled, .button:disabled {
+	background-color: #BBB;
+}
+
+br {
+	clear: both;
+}
+header {
+	width: 100%;
+	height: 55px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #1a1a1a;
+	position: relative;
+	margin: 0;
+}
+header  img {
+	display: inline;
+	position: relative;
+	margin: auto;
+	width: 140px;
+	height: 50px;
+}
+footer {
+	width: 100%;
+	height: 270px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #1a1a1a;
+	position: relative;
+	margin: 0;
+}
+footer  img {
+	display: inline;
+	position: relative;
+	margin: 20px;
+	width: 140px;
+	height: 50px;
+}
+footer h3{
+	color: white;
+	margin: 0px;
+}
+footer p{
+	color: white;
+	margin: 0px;
+}
+footer
+{
+	color: white;
+	margin: 0px;
+}
+#menu-bars {
+	width: 50px;
+	height: 50px;
+	background: center center no-repeat transparent;
+	background-image: url('./imgs/menu_bars.png');
+	box-shadow: none;
+	position: absolute;
+	top: 0;
+	left: 10px; 
+	border:	none;
+	cursor: pointer;
+	margin: 0;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+#menu-bars:hover {
+	top: 1px;
+}
+
+.st-content .content {
+	margin: 8px;
+	padding: 8px;
+	border-radius: 4px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.st-menu ul  {
+	width: 100%;
+	max-height: 100%;
+	border-bottom: 1px solid #222;
+	overflow: auto;
+	padding: 0;
+	margin: 0;
+}
+.st-menu ul  h1 {
+	padding: 10px;
+	color: #FFF;
+}
+.st-menu ul > li  {
+	display: block;
+	float: none;
+	list-style: none;
+	position: relative;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #222;
+	padding: 0;
+	font-size: 15px;
+	text-align: left;
+	font-family: 'Microsoft YaHei', sans-serif;
+	font-weight: 300;
+}
+.st-menu ul > li a  {
+	letter-spacing: 1px;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	text-decoration: none;
+	color: #FFF;
+	text-transform: uppercase;
+	padding-left: 21%;
+	opacity: 0.8;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.st-menu ul > li a:hover {
+	color: #FFF;
+	background-color: #000;
+	opacity: 1;
+}
+.st-menu .selected  {
+	color: #FFF;
+	background-color: #000;
+	background-position: 5px center;
+	border-left: 5px solid #57d6f5;
+	font-weight: 400;
+	opacity: 1;
+}
+
+html,
+body,
+.st-container,
+.st-pusher,
+.st-content {
+	height: 100%;
+}
+.st-content,
+.st-content-inner {
+	position: relative;
+}
+.st-content {
+	overflow-y: scroll;
+}
+.st-container {
+	position: relative;
+	overflow: hidden;
+}
+.st-pusher {
+	position: relative;
+	left: 0;
+	z-index: 999;
+	height: 100%;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	background-color: #FFF;
+	box-shadow: 0px 0px 40px #000;
+}
+.st-pusher::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	background: rgba(0,0,0,0.6);
+	z-index: 10;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+.st-menu-open .st-pusher::after {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+.st-menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	visibility: hidden;
+	width: 200px;
+	height: 100%;
+	background-color: #111;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.st-menu::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	content: '';
+	opacity: 1;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+.st-menu-open .st-menu::after {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+.st-effect-4.st-menu-open .st-pusher {
+	-webkit-transform: translate3d(200px, 0, 0);
+	transform: translate3d(200px, 0, 0);
+}
+.st-effect-4.st-menu {
+	z-index: 1;
+	-webkit-transform: translate3d(-50%, 0, 0);
+	transform: translate3d(-50%, 0, 0);
+}
+.st-effect-4.st-menu-open .st-effect-4.st-menu {
+	visibility: visible;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.st-effect-4.st-menu::after {
+	display: none;
+}
+</style>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/idangerous.swiper-2.2.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+
+
+    <script type="text/javascript">
+	$(document).ready(function(){
+    	var tds = $("td");
+    	tds.click(tdclick);
+	});
+
+	function tdclick(){
+    	var clickfunction = this;
+   		var td = $(this);
+    	var text = $(this).text();
+    	td.html("");
+    	var input = $("<input>");
+    	input.attr("value",text);
+    	input.keyup(function(event){
+        	var myEvent = event || window.event;
+        	var kcode = myEvent.keyCode;
+        	if(kcode == 13){
+            	var inputnode = $(this);
+            	var inputext = inputnode.val();
+            	var tdNode = inputnode.parent();
+            	tdNode.html(inputext);
+            	tdNode.click(tdclick);
+        	}
+    	});
+    	td.append(input);
+    	var inputdom = input.get(0);
+    	inputdom.select();
+    	td.unbind("click");
+	}
+</script>
+
+	<script type="text/javascript">
+		$(function(){
+           $("#div1").hide();
+           $("#div2").hide();
+        });
+	</script>
+
+	<script type="text/javascript">
+		$(function(){
+			$("#import").hide();
+			$(".mana li").eq(0).show();
+			$(".btns li").eq(0).addClass("active");
+			$(".btns li").mouseover(function(){
+				$(this).addClass("active").siblings().removeClass("active");
+				var index = $(this).index();
+				$(".mana li").eq(index).fadeIn(10).siblings().fadeOut(0);
+			})
+		})
+	</script>
+
+<script type="text/javascript">
+	$(function(){
+		var k = 0;
+		$("#delehall").click(function(){
+			if (k == 1){
+				k = 0;
+				$("#import").fadeOut(0);
+				$(".addinfo").remove();
+			}
+			else{
+				k = 1;
+				$("#infowarning").append('<p class="addinfo"style="display:inline"><b>删除演出厅 </b>状态！！');
+				$("#import").fadeIn(500);
+				$(".infos .btn-warning").click(function(){
+					if(k == 1){$(this).remove();}
+				});
+			}
+		});
+		$("#addhall").click(function(){
+		if (k == 0){
+			$("#infowarning").append('<p class="addinfo"style="display:inline"><b>添加演出厅 </b>状态！！');
+			$("#import").fadeIn(500);
+            $("#div2").fadeIn("slow");
+            $("#div1").html('<div align="right" class="addtable"><span id="span2"><b>确认</b></span></div><form class="addpanel"><b>请输入演出厅的名字：</b><br/><input type="text" class="hallname"></input></form>');
+            $("#div1").fadeIn("slow");    
+            $("#span2").click(function(){
+              	$("#div1").fadeOut("slow");
+               	$("#div2").fadeOut("slow");
+               	$("#import").fadeOut(0);
+				$(".addinfo").remove();	
+				var str = $(".hallname").val();
+				if(str != ""){
+					$("#addhalls").append('<button type="button" class="btn btn-warning btn-lg addh">'+str+'</button>');
+				}
+				$(".addpanel").remove();
+				$(".addtable").remove(400);
+			});}
+		});
+	});
+
+	$(function(){
+		var i = 0;
+		$("#delepeople").click(function(){
+			if (i == 2){
+				i = 0;
+				$("#import").fadeOut(0);
+				$(".addinfo").remove();
+			}
+			else{
+				i = 2;
+				$("#infowarning").append('<p class="addinfo" style="display:inline"><b>删除工作人员 </b>状态！！');
+				$("#import").fadeIn(500);
+				$("#people tr").click(function(){
+					if(i == 2){$(this).remove();}
+				});
+			}
+		});
+		$("#addstaff").click(function(){
+		if (i == 0){
+			$("#infowarning").append('<p class="addinfo"style="display:inline"><b>添加工作人员 </b>状态！！');
+			$("#import").fadeIn(500);
+            $("#div2").fadeIn("slow");
+            $("#div1").html('<div align="right" class="addtable"><span id="span2"><b>确认</b></span></div><form class="addpanel"><b style="text-align:center;font-size:30px;">输入完全员工信息</b><br/><b>员工名字：</b><input type="text" class="inputname"></input><br/><b>登录密码：</b><input class="inputpass" type="text"></input><br/><b>员工职位：</b><input class="inputpos" type="text"></input></form>');
+            $("#div1").fadeIn("slow");
+            $("#span2").click(function(){
+              	$("#div1").fadeOut("slow");
+               	$("#div2").fadeOut("slow");
+               	$("#import").fadeOut(0);
+               	$(".addinfo").remove();
+				var name = $(".inputname").val();
+				var passwd = $(".inputpos").val();
+				var posi = $(".inputpos").val();
+				if ((name != "") && (passwd != "") && (posi != "")){
+					var str = "<tr><td>"+name+"</td><td>"+passwd+"</td><td>"+posi+"</td></tr>";
+					$("#people").append(str);
+				}
+				$(".addpanel").remove();
+				$(".addtable").remove(400);
+			});}
+		});
+	});
+
+	$(function(){
+		var j = 0;
+		$("#deleshow").click(function(){
+			if (j == 3){
+				j = 0;
+				$("#import").fadeOut(0);
+				$(".addinfo").remove();
+			}
+			else{
+				j = 3;
+				$("#infowarning").append('<p class="addinfo"style="display:inline"><b>删除演出计划 </b>状态！！');
+				$("#import").fadeIn(500);
+				$("#shows tr").click(function(){
+					if (j == 3){$(this).remove();}
+				});
+			}
+		});		
+		$("#addonshow").click(function(){
+		if (j == 0){
+			$("#infowarning").append('<p class="addinfo"style="display:inline"><b>添加演出计划 </b>状态！！');
+			$("#import").fadeIn(500);
+            $("#div2").fadeIn("slow");
+            $("#div1").html('<div align="right" class="addtable"><span id="span2"><b>确认</b></span></div><form class="addpanel"><b style="text-align:center;font-size:30px;">输入完全演出信息</b><br/><b>影片名称：</b><select class="playname"><option value="北京遇上西雅图2">北京遇上西雅图2</option><option value="美国队长3">美国队长3</option><option value="奇幻森林">奇幻森林</option><option value="购物女王">购物女王</option></select><br/><b>演出厅：</b><select class="playhall"><option value="巨幕演出厅">巨幕演出厅</option><option value="大大演出厅">大大演出厅</option><option value="大小演出厅">大小演出厅</option><option value="小小演出厅">小小演出厅</option></select><br/><b>演出时间：</b><input class="inputpos" type="text" placeholder="自由输入时间"></input></form>');
+            $("#div1").fadeIn("slow");
+            $("#span2").click(function(){
+              	$("#div1").fadeOut("slow");
+               	$("#div2").fadeOut("slow");
+               	$("#import").fadeOut(0);
+               	$(".addinfo").remove();
+				var name = $(".playname").val();
+				var passwd = $(".playhall").val();
+				var posi = $(".inputpos").val();
+				if((name != "")&&(passwd != "")&&(posi != "")){
+					var str = "<tr><td>"+name+"</td><td>"+passwd+"</td><td>"+posi+"</td></tr>";
+					$("#shows").append(str);
+				}
+				$(".addpanel").remove();
+				$(".addtable").remove(400);
+			});}
+		});
+	});
+</script>
+
+	
+
+<style type="text/css">
+.function{margin-top: 150px;margin-bottom: 100px;}
+.function h1{text-align: center;color:#55dbfc; margin-bottom: 40px;}
+
+.out{border: 3px dotted gray;border-radius:10px;  border-left: 10px solid  #496ea4; margin: auto;min-height: 520px;}
+ul{list-style: none;}
+.out .mana{border-left:1px solid;min-height: 500px;margin-top: 5px; position: relative;padding: 40px;}
+.out .mana li{display:none;}
+.out .btns{text-align: center;margin-top: 10px;}
+.out .btns li{width: 100px;height: 50px;text-align: center;border-radius: 5px;cursor: pointer;padding-top: 15px; display: inline-block;}
+.out .btns li.active{background: #55dbfc}
+.diff{max-width: 500px;min-height: 300px;text-align: center;margin: auto;}
+.diff h2{text-align: center;color:#55dbfc; margin-bottom: 15px;}
+.diff .infos{max-width: 500px;min-height: 300px;margin: auto;}
+.info .btn{margin:10px;min-height: 46px;max-width: 124px;}
+.addh{margin:30px; margin-top: 300px;margin-left: 100px;}
+.control{min-width: 200px;max-height: 350px;border-radius: 10px;}
+.control .btn{margin-bottom: 40px;}
+
+.alert-warning{max-width: 100%;margin: auto;text-align: center;}
+th{text-align: center;}
+
+#div1 {position: absolute; left:5px;top:550px;width:400px;height:300px;z-index:1;border:solid #4581d9 4px;border-radius: 10px;background-color: white;}
+#div1 div{background-color:#4581d9;}
+#div2 {position: absolute; left:0px;top:0px;width:100%;height:100%;}
+#div2 img{width: 100%;height: 100%;}
+#span2{cursor:pointer;color:white;}
+.addpanel{margin-top: 30px;margin-left: 40px;}
+#addpanel{margin-top: 100px;margin-left: 120px;}
+
+
+</style>
+
+</head>
+
+<body>
+	<div id="st-container" class="st-container">
+		<nav class="st-menu st-effect-4">
+			<ul>
+				<li><img src="imgs/logo.png"><h2>你的软件合作者</h2></li>
+			  	<li><a class="ico home " href="index.html">EASY剧院</a></li>
+			  	<li><a class="ico services" href="logsell.html">使用登录</a></li>
+			  	<li><a class="ico login selected" href="logman.html">管理登录</a></li>
+			  	<li><a class="ico aboutus" href="aboutus.html">关于EASY</a></li>
+			  	<li><a class="ico contact" href="contact.html">联系我们</a></li>
+		  	</ul>
+		</nav>
+		<div class="st-pusher">
+			<div class="st-content">
+				<div class="st-content-inner">
+					<header>
+						<div id="st-trigger-effects">
+							<button data-effect="st-effect-4" id="menu-bars"></button>
+						</div>
+						<img src="imgs/logo.png">
+						<!-- 警告窗口 -->
+		<div class="alert alert-warning" role="alert" >
+  			<p ><strong>Warning!</strong> 你现在已经处于可修改信息状态！！（点击工作人员以及演出界面信息可进行修改！！回车确认！)</p>
+		</div>
+		<!-- 警告窗口 -->
+					</header>
+					
+					<div id="div2">
+		<img src="imgs/men.png">
+	</div>
+	<div id="div1">
+				
+	</div>
+
+	<!-- 功能选项 -->
+	<div class="container function">
+		<div id="import" class="alert alert-warning" role="alert" >
+  			<p id="infowarning"><strong>Warning!</strong> 你现在处于：</p>
+		</div>
+		<h1>管理者管理</h1>			
+		<div class="out row">
+			<ul class="btns col-md-2">
+				<li ><b>演出厅管理</b></li>
+				<li ><b>工作人员管理</b></li>
+				<li ><b>演出管理</b></li>
+			</ul>
+			<ul class="mana col-md-10">
+				<li>
+					<div class="row">
+					<div class="diff col-md-8">
+						<h2>现有演出厅</h2>
+						<div class="infos">
+							<div class="info" >
+								<button type="button" class="btn btn-warning btn-lg ">巨幕演出厅</button>
+								<button type="button" class="btn btn-warning btn-lg ">大大演出厅</button>
+							</div>
+							<div class="info" id="addhalls">
+  								<button type="button" class="btn btn-warning btn-lg ">大小演出厅</button>
+  								<button type="button" class="btn btn-warning btn-lg ">小小演出厅</button>
+  							</div>
+						</div>
+					</div>
+					<div class="control col-md-4">
+							<button id="addhall" type="button" class="btn btn-info btn-lg btn-block">增加演出厅</button>
+							<button id="delehall" type="button" class="btn btn-info btn-lg btn-block">删除演出厅</button>
+							<button id="seatmana" type="button" class="btn btn-info btn-lg btn-block">座位管理</button>
+					</div>
+					</div>
+				</li>
+				<li>
+					<div class="diff">
+						<h2>现有工作人员</h2>
+							<div class="infos">
+								<table id="people" class="table table-striped table-hover">
+ 									 <th>姓名</th><th>密码</th><th>职位</th>
+ 									 <tr>
+ 									 	<td>杨崇辉</td>
+ 									 	<td>1234</td>
+ 									 	<td>普通</td>
+ 									 </tr>
+ 									 <tr>
+ 									 	<td>蒙玉航</td>
+ 									 	<td>456</td>
+ 									 	<td>普通</td>
+ 									 </tr>
+ 									 <tr>
+ 									 	<td>周琪</td>
+ 									 	<td>789</td>
+ 									 	<td>普通</td>
+ 									 </tr>
+								</table>
+							</div>
+					</div>
+					<div class="control">
+							<button id="addstaff" type="button" class="btn btn-info btn-lg btn-block">增加工作人员</button>
+							<button id="delepeople" type="button" class="btn btn-info btn-lg btn-block">删除工作人员</button>
+					</div>
+				</li>
+				<li>
+					<div class="diff">
+						<h2>现有演出计划</h2>
+							<div class="infos">
+								<table id="shows" class="table">
+ 									 <th>影片</th><th>演出厅过</th><th>时间</th>
+ 									 <tr class="success">
+ 									 	<td>北京遇上西雅图2</td>
+ 									 	<td>大大演出厅</td>
+ 									 	<td>12:10 − 14:38</td>
+ 									 </tr>
+ 									 <tr >
+ 									 	<td>美国队长3</td>
+ 									 	<td>小小演出厅</td>
+ 									 	<td>13:55 − 16:23</td>
+ 									 </tr>
+ 									 <tr  class="danger">
+ 									 	<td>百鸟朝凤</td>
+ 									 	<td>小小演出厅</td>
+ 									 	<td>14:55 − 17:23</td>
+ 									 </tr>
+ 									 <tr >
+ 									 	<td>奇幻森林</td>
+ 									 	<td>大小演出厅</td>
+ 									 	<td>17:40 − 20:08</td>
+ 									 </tr>
+ 									 <tr  class="info">
+ 									 	<td>超脑48小时</td>
+ 									 	<td>巨幕演出厅</td>
+ 									 	<td>19:30 − 21:58</td>
+ 									 </tr>
+ 									 <tr >
+ 									 	<td>购物女王</td>
+ 									 	<td>大小演出厅</td>
+ 									 	<td>13:00 − 15:28</td>
+ 									 </tr>
+ 									 <tr  class="active">
+ 									 	<td>大唐玄奘</td>
+ 									 	<td>小小演出厅</td>
+ 									 	<td>14:10 − 16:38</td>
+ 									 </tr>
+								</table>
+							</div>
+					</div>
+					<div class="control">
+							<button id="addonshow" type="button" class="btn btn-info btn-lg btn-block">增加演出计划</button>
+							<button id="deleshow" type="button" class="btn btn-info btn-lg btn-block">删除演出计划</button>
+					</div>
+				</li>
+			</ul>
+		</div> 
+	</div>
+					<footer>
+						<img src="imgs/logo.png">
+						<h3>详细信息：</h3>
+						<p>陕西省西安市西安邮电大学</p>
+						<h6>邮政编码: 710121</h6>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/sidebarEffects.js"></script>
+	<script src="js/swipers.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>

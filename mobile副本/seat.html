@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+	<link type="image/x-icon" href="imgs/icon.jpg" rel="icon">
+	<title> EASY | 你的软件合作者 :: home</title>
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+<style type="text/css">
+.content, .content * {
+	font: 12px;
+	color: #777;
+	font-weight: 300;
+}
+a  {
+	color: #AEAEAE;
+	text-decoration: none;
+}
+a:link {
+	color: white;
+	text-decoration: none;
+}
+a:visited {
+	color: #BB2222;
+	text-decoration: none;
+}
+a:hover {
+	cursor: pointer;
+}
+h1 {
+	color: #888;
+	font-size: 26px;
+	margin: 15px 0px;
+	position: relative;
+	text-align: center;
+	font-family: 'Microsoft YaHei', sans-serif;
+	font-weight: 300;
+}
+h2 {
+	color: #888;
+	font-size: 23px;
+	margin: 13px 0px;
+	position: relative;
+	text-align: center;
+	font-family: 'Microsoft YaHei', sans-serif;
+	font-weight: 300;
+}
+h3 {
+	font-size: 20px;
+	position: relative;
+	text-align: center;
+	font-weight: 300;
+}
+h4 {
+	color: #888;
+	font-size: 18px;
+	margin: 9px 0px;
+	position: relative;
+	text-align: center;
+	font-family: 'Microsoft YaHei', sans-serif;
+	font-weight: 300;
+}
+h5 {
+	color: #888;
+	font-size: 16px;
+	margin: 7px 0px;
+	position: relative;
+	text-align: center;
+	font-family: 'Microsoft YaHei', sans-serif;
+	font-weight: 300;
+}
+
+body  {
+	font-weight: 200;
+	background-color: #FFF;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	height: 100%;
+	line-height: 150%;
+}
+
+button, .button {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 36px;
+	border: 0;
+	padding: 3px;
+	background-color: #57d6f5;
+	color: #FFF !important;
+	border-radius: 2px;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+button:hover, .button:hover {
+	margin-top: 5px;
+	line-height: 36px;
+	height: 43px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+button:disabled, .button:disabled {
+	background-color: #BBB;
+}
+
+header {
+	width: 100%;
+	height: 55px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #1a1a1a;
+	position: relative;
+	margin: 0;
+}
+header  img {
+	display: inline;
+	position: relative;
+	margin: auto;
+	width: 140px;
+	height: 50px;
+}
+footer {
+	width: 100%;
+	height: 270px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #1a1a1a;
+	position: relative;
+	margin: 0;
+}
+footer  img {
+	display: inline;
+	position: relative;
+	margin: 20px;
+	width: 140px;
+	height: 50px;
+}
+footer h3,p,h6{
+	color: white;
+	margin: 0px;
+}
+#menu-bars {
+	width: 50px;
+	height: 50px;
+	background: center center no-repeat transparent;
+	background-image: url('./imgs/menu_bars.png');
+	box-shadow: none;
+	position: absolute;
+	top: 0;
+	left: 10px; 
+	border:	none;
+	cursor: pointer;
+	margin: 0;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+#menu-bars:hover {
+	top: 1px;
+}
+
+.st-content .content {
+	margin: 8px;
+	padding: 8px;
+	border-radius: 4px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.st-menu ul  {
+	width: 100%;
+	max-height: 100%;
+	border-bottom: 1px solid #222;
+	overflow: auto;
+	padding: 0;
+	margin: 0;
+}
+.st-menu ul  h1 {
+	padding: 10px;
+	color: #FFF;
+}
+.st-menu ul > li  {
+	display: block;
+	float: none;
+	list-style: none;
+	position: relative;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #222;
+	padding: 0;
+	font-size: 15px;
+	text-align: left;
+	font-family: 'Microsoft YaHei', sans-serif;
+	font-weight: 300;
+}
+.st-menu ul > li a  {
+	letter-spacing: 1px;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	text-decoration: none;
+	color: #FFF;
+	text-transform: uppercase;
+	padding-left: 21%;
+	opacity: 0.8;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.st-menu ul > li a:hover {
+	color: #FFF;
+	background-color: #000;
+	opacity: 1;
+}
+.st-menu .selected  {
+	color: #FFF;
+	background-color: #000;
+	background-position: 5px center;
+	border-left: 5px solid #57d6f5;
+	font-weight: 400;
+	opacity: 1;
+}
+
+html,
+body,
+.st-container,
+.st-pusher,
+.st-content {
+	height: 100%;
+}
+.st-content,
+.st-content-inner {
+	position: relative;
+}
+.st-content {
+	overflow-y: scroll;
+}
+.st-container {
+	position: relative;
+	overflow: hidden;
+}
+.st-pusher {
+	position: relative;
+	left: 0;
+	z-index: 999;
+	height: 100%;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	background-color: #FFF;
+	box-shadow: 0px 0px 40px #000;
+}
+.st-pusher::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	background: rgba(0,0,0,0.6);
+	z-index: 10;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+.st-menu-open .st-pusher::after {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+.st-menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	visibility: hidden;
+	width: 200px;
+	height: 100%;
+	background-color: #111;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.st-menu::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	content: '';
+	opacity: 1;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+.st-menu-open .st-menu::after {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+.st-effect-4.st-menu-open .st-pusher {
+	-webkit-transform: translate3d(200px, 0, 0);
+	transform: translate3d(200px, 0, 0);
+}
+.st-effect-4.st-menu {
+	z-index: 1;
+	-webkit-transform: translate3d(-50%, 0, 0);
+	transform: translate3d(-50%, 0, 0);
+}
+.st-effect-4.st-menu-open .st-effect-4.st-menu {
+	visibility: visible;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.st-effect-4.st-menu::after {
+	display: none;
+}
+</style>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/idangerous.swiper-2.2.min.js"></script>
+    <script src="js/classie.js"></script>
+
+    	<script type="text/javascript" src="js/jquery.seat-charts.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/seat.css">
+
+<script type="text/javascript">
+		$(function(){
+           $("#div1").hide();
+           $("#div2").hide();
+           $("#span1").mouseover(function(){
+                $("#div1").fadeIn("slow");
+                $("#div2").fadeIn("slow");
+            });
+            $("#span2").click(function(){
+               $("#div1").fadeOut("slow");
+               $("#div2").fadeOut("slow");
+               location.reload();
+            })
+        });
+
+var price = 26; 
+$(document).ready(function() {
+	var $cart = $('#selected-seats'), //座位区
+	$counter = $('#counter'), //票数
+	$total = $('#total'); //总计金额
+	
+	var sc = $('#seat-map').seatCharts({
+		map: [  //座位图
+			'aaaaaaaaaa',
+            'aaaaaaaaaa',
+            'aaaaaaaaaa',
+            'aaaaaaaaaa',
+            '__________',
+			'aaaaaaaaaa',
+			'aaaaaaaaaa',
+			'aaaaaaaaaa',
+			'aaaaaaaaaa',
+            'aaaaaaaaaa',
+            'aaaaaaaaaa'
+		],
+		naming : {
+			top : false,
+			getLabel : function (character, row, column) {
+				return column;
+			}
+		},
+		legend : { //定义图例
+			node : $('#legend'),
+			items : [
+				[ 'a', 'available',   '可选座' ],
+				[ 'a', 'unavailable', '已售出']
+			]					
+		},
+		click: function () { //点击事件
+			if (this.status() == 'available') { //可选座
+				$('<li>'+(this.settings.row+1)+'排'+this.settings.label+'座</li>')
+					.attr('id', 'cart-item-'+this.settings.id)
+					.data('seatId', this.settings.id)
+					.appendTo($cart);
+
+				$counter.text(sc.find('selected').length+1);
+				$total.text(recalculateTotal(sc)+price);
+							
+				return 'selected';
+			} else if (this.status() == 'selected') { //已选中
+					//更新数量
+					$counter.text(sc.find('selected').length-1);
+					//更新总计
+					$total.text(recalculateTotal(sc)-price);
+						
+					//删除已预订座位
+					$('#cart-item-'+this.settings.id).remove();
+					//可选座
+					return 'available';
+			} else if (this.status() == 'unavailable') { //已售出
+				return 'unavailable';
+			} else {
+				return this.style();
+			}
+		}
+	});
+	//已售出的座位
+	sc.get(['1_2', '4_4','4_5','6_6','6_7','8_5','8_6','8_7','8_8', '10_1', '10_2']).status('unavailable');
+		
+});
+//计算总金额
+function recalculateTotal(sc) {
+	var total = 0;
+	sc.find('selected').each(function () {
+		total += price;
+	});
+			
+	return total;
+}
+</script>
+
+
+<style type="text/css">
+.seat{margin-bottom: 120px; border:2px dotted gray;border-radius: 20px; min-height:1000px;margin-top: 20px;}
+.seat h1{color: #55dbfc; text-align: center;margin-bottom: 40px;margin-top: 30px;}
+.demo{background-color: white;}
+.booking-details{margin-top: 10px;}
+#selected-seats{position: relative; width: 100%;}
+
+
+#div1 {position: absolute; left:3px;top:650px;width:400px;height:350px;z-index:1;border:solid #4581d9 4px;border-radius: 10px;background-color: white;}
+#div1 div{background-color:#4581d9;}
+#div1 .btn-info{margin-top: 10px;margin-left: 10px;}
+#div2 {position: absolute; left:0px;top:0px;width:100%;height:100%;z-index:1;}
+#div2 img{width: 100%;height: 100%;}
+#span2{cursor:pointer;color:white;}
+</style>
+
+
+
+</head>
+
+<body>
+	<div id="st-container" class="st-container">
+		<nav class="st-menu st-effect-4">
+			<ul>
+				<li><img src="imgs/logo.png"><h2>你的软件合作者</h2></li>
+			  	<li><a class="ico home " href="index.html">EASY剧院</a></li>
+			  	<li><a class="ico services selected" href="logsell.html">使用登录</a></li>
+			  	<li><a class="ico login" href="logman.html">管理登录</a></li>
+			  	<li><a class="ico aboutus" href="aboutus.html">关于EASY</a></li>
+			  	<li><a class="ico contact" href="contact.html">联系我们</a></li>
+		  	</ul>
+		</nav>
+		<div class="st-pusher">
+			<div class="st-content">
+				<div class="st-content-inner">
+					<header>
+						<div id="st-trigger-effects">
+							<button data-effect="st-effect-4" id="menu-bars"></button>
+						</div>
+						<img src="imgs/logo.png">
+					</header>
+					
+					<form>
+
+					<!-- 选座 -->
+					<div class="container seat">
+						<h1>选座</h1>
+						<div class="demo">
+   							<div id="seat-map">
+								<div class="front">大大厅屏幕</div>					
+							</div>
+							<div class="booking-details">
+								<p>影片：<span>北京遇上西雅图</span></p>
+								<p>票价：<span>¥26</span></p>
+								<p>时间：<span>11月14日 21:00</span></p>
+								<p>座位：</p>
+								<ul id="selected-seats"></ul>
+								<p>票数：<span id="counter">0</span></p>
+								<p>总计：<b>￥<span id="total">0</span></b></p>
+								<button type="submit" class="btn btn-primary" id="span1" style="margin-top: 20px;width: 96%">确认购票</button>
+								<div id="legend"></div>
+							</div>
+   						</div>
+					</div>
+
+					<div id="div2">
+						<img src="imgs/men.png">
+					</div>
+					<div id="div1">
+						<div align="right">
+							<span id="span2"><b>购票成功，再次购买</b></span>
+   						</div>
+   						<a href="sellin.html" style="display: block;"><button type="button" style="margin-top: 80px;margin-left: 150px;">返回选择影片</button></a>
+						<a href="index.html"><button type="button" style="margin-top: 40px; margin-left: 150px;">退出返回主页</button></a>
+					</div>
+					</form>
+
+
+					<footer>
+						<img src="imgs/logo.png">
+						<h3>详细信息：</h3>
+						<p>陕西省西安市西安邮电大学</p>
+						<h6>邮政编码: 710121</h6>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/sidebarEffects.js"></script>
+	<script src="js/swipers.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>

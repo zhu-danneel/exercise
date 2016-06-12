@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+	<link type="image/x-icon" href="imgs/icon.jpg" rel="icon">
+	<title> EASY | 你的软件合作者 :: home</title>
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+	<style type="text/css">
+	.content, .content * {
+	font: 12px;
+	color: #777;
+	font-weight: 300;
+}
+a  {
+	color: #AEAEAE;
+	text-decoration: none;
+}
+a:link {
+	color: white;
+	text-decoration: none;
+}
+a:visited {
+	color: #BB2222;
+	text-decoration: none;
+}
+a:hover {
+	cursor: pointer;
+}
+h1 {
+	color: #888;
+	font-size: 26px;
+	margin: 15px 0px;
+	position: relative;
+	text-align: center;
+	font-family: 'Microsoft YaHei', sans-serif;
+	font-weight: 300;
+}
+h2 {
+	color: #888;
+	font-size: 23px;
+	margin: 13px 0px;
+	position: relative;
+	text-align: center;
+	font-family: 'Microsoft YaHei', sans-serif;
+	font-weight: 300;
+}
+h3 {
+	font-size: 20px;
+	position: relative;
+	text-align: center;
+	font-weight: 300;
+}
+h4 {
+	color: #888;
+	font-size: 18px;
+	margin: 9px 0px;
+	position: relative;
+	text-align: center;
+	font-family: 'Microsoft YaHei', sans-serif;
+	font-weight: 300;
+}
+h5 {
+	color: #888;
+	font-size: 16px;
+	margin: 7px 0px;
+	position: relative;
+	text-align: center;
+	font-family: 'Microsoft YaHei', sans-serif;
+	font-weight: 300;
+}
+* {
+	font-family: 'Microsoft YaHei', sans-serif !important;
+}
+body  {
+	font-weight: 200;
+	background-color: #FFF;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	height: 100%;
+	line-height: 100%;
+}
+table {
+	margin: 2%;
+	width: 96%;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 14px;
+}
+th {
+	font-weight: 500;
+	width: 20%;
+}
+dd,dt{
+	display: inline;
+}
+td {
+	padding: 4px 10px;
+	height: 40px;
+	width: 20%;
+}
+table .odd {
+	background-color: #FFF;
+}
+table .even {
+	background-color: #F8F8F8;
+}
+table button {
+	height: 34px;
+	line-height: 26px;
+	width: 100%;
+	margin: 1px;
+}
+table button:hover {
+	margin-top: 2px;
+	height: 33px;
+	line-height: 26px;
+	border-bottom: 0px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.4);
+}
+table img {
+	max-width: 130px;
+}
+input {
+	float: left;
+	width: 92%;
+	padding: 10px 2%;
+	margin: 6px 2%;
+	font-size: 16px;
+	border-radius: 2px;
+	border: 0;
+	border-bottom: 1px solid #DDD;
+	background-color: #FFF;
+	color: #666;
+}
+
+button, .button {
+	font-size: 16px;
+	font-weight: 300;
+	margin: 40px 40px;
+	height: 44px;
+	border: 0;
+	background-color: #57d6f5;
+	color: #FFF !important;
+	border-radius: 2px;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+button:hover, .button:hover {
+	margin-top: 5px;
+	line-height: 36px;
+	height: 43px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+button:disabled, .button:disabled {
+	background-color: #BBB;
+}
+hr {
+	height: 1px;
+	width: 98%;
+	background-color: #DDD;
+	border: 0;
+	margin: 15px auto;
+}
+fieldset {
+	display: block;
+	margin: 20px 1%;
+	margin-bottom: 40px;
+	padding: 0 auto;
+	padding: 15px 0;
+	border: 0;
+	border-top: 1px solid #DDD;
+	width: 98%;
+}
+
+legend {
+	display: table; 
+	min-width: 0px;
+	max-width: 70%;
+	position: relative;
+	margin: auto;
+	padding: 5px 20px;
+	font-size: 20px;
+	text-align: center;
+}
+
+header {
+	width: 100%;
+	height: 55px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #1a1a1a;
+	position: relative;
+	margin: 0;
+}
+header  img {
+	display: inline;
+	position: relative;
+	margin: auto;
+	width: 140px;
+	height: 50px;
+}
+footer {
+	width: 100%;
+	height: 270px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #1a1a1a;
+	position: relative;
+	margin: 0;
+}
+footer  img {
+	display: inline;
+	position: relative;
+	margin: 20px;
+	width: 140px;
+	height: 50px;
+}
+footer h3,h6{
+	color: white;
+	margin: 0px;
+}
+#menu-bars {
+	width: 50px;
+	height: 50px;
+	background: center center no-repeat transparent;
+	background-image: url('./imgs/menu_bars.png');
+	box-shadow: none;
+	position: absolute;
+	top: 0;
+	left: 10px; 
+	border:	none;
+	cursor: pointer;
+	margin: 0;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+#menu-bars:hover {
+	top: 1px;
+}
+
+
+img {
+	vertical-align: top;
+}
+
+
+
+.st-menu ul  {
+	width: 100%;
+	max-height: 100%;
+	border-bottom: 1px solid #222;
+	overflow: auto;
+	padding: 0;
+	margin: 0;
+}
+.st-menu ul  h1 {
+	padding: 10px;
+	color: #FFF;
+}
+.st-menu ul > li  {
+	display: block;
+	float: none;
+	list-style: none;
+	position: relative;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #222;
+	padding: 0;
+	font-size: 15px;
+	text-align: left;
+	font-family: 'Microsoft YaHei', sans-serif;
+	font-weight: 300;
+}
+.st-menu ul > li a  {
+	letter-spacing: 1px;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	text-decoration: none;
+	color: #FFF;
+	text-transform: uppercase;
+	padding-left: 21%;
+	opacity: 0.8;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.st-menu ul > li a:hover {
+	color: #FFF;
+	background-color: #000;
+	opacity: 1;
+}
+.st-menu .selected  {
+	color: #FFF;
+	background-color: #000;
+	background-position: 5px center;
+	border-left: 5px solid #57d6f5;
+	font-weight: 400;
+	opacity: 1;
+}
+
+
+html,
+body,
+.st-container,
+.st-pusher,
+.st-content {
+	height: 100%;
+}
+.st-content,
+.st-content-inner {
+	position: relative;
+}
+.st-content {
+	overflow-y: scroll;
+}
+.st-container {
+	position: relative;
+	overflow: hidden;
+}
+.st-pusher {
+	position: relative;
+	left: 0;
+	z-index: 999;
+	height: 100%;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	background-color: #FFF;
+	box-shadow: 0px 0px 40px #000;
+}
+.st-pusher::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	background: rgba(0,0,0,0.6);
+	z-index: 10;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+.st-menu-open .st-pusher::after {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+.st-menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	visibility: hidden;
+	width: 200px;
+	height: 100%;
+	background-color: #111;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.st-menu::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	content: '';
+	opacity: 1;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+.st-menu-open .st-menu::after {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+.st-effect-4.st-menu-open .st-pusher {
+	-webkit-transform: translate3d(200px, 0, 0);
+	transform: translate3d(200px, 0, 0);
+}
+.st-effect-4.st-menu {
+	z-index: 1;
+	-webkit-transform: translate3d(-50%, 0, 0);
+	transform: translate3d(-50%, 0, 0);
+}
+.st-effect-4.st-menu-open .st-effect-4.st-menu {
+	visibility: visible;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.st-effect-4.st-menu::after {
+	display: none;
+}
+
+footer p{
+	color: white;
+}
+
+.out{
+	min-height: 400px; 
+	border: 1px solid gray;
+	border-radius:3px;  
+	border-top: 10px solid  #337ab7; 
+	margin: auto;
+}
+ul{
+	list-style: none;
+}
+.out .btns{
+	width: 100%;
+	padding-top: 10px;
+}
+.out .btns li{
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	border-radius: 5%;
+	display: inline-block;
+	cursor: pointer;
+	padding-top: 15px; 
+}
+.out .btns li.active{
+	background: #55dbfc
+}
+.out .days li{
+	display:none;
+}
+.out .days .row{
+	max-width: 750px; 
+	border-top: 1px solid gray;
+}
+
+#div1 {
+	position: absolute; 
+	left:4px;
+	top:800px;
+	width:400px;
+	height:300px;
+	z-index:1;
+	border:solid #4581d9 4px;
+	border-radius: 10px;
+	background-color: white;
+}
+#div1 div{
+	background-color:#4581d9;
+}
+
+#div2 {
+	position: absolute; 
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	z-index:1;
+}
+#div2 img{
+	width: 100%;
+	height: 100%;
+}
+#span2{
+	cursor:pointer;
+	color:white;
+}
+
+</style>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/idangerous.swiper-2.2.min.js"></script>
+    <script src="js/classie.js"></script>
+
+    <script type="text/javascript">
+	$(function(){
+           $("#div1").hide();
+           $("#div2").hide();
+            $(".sellinfo").click(function(){
+                  $("#div1").fadeIn("slow");
+                  $("#div2").fadeIn("slow");
+            });
+            $("#span2").click(function(){
+            	$("#div1").fadeOut("slow");
+                $("#div2").fadeOut("slow");
+            })
+        });
+
+		$(function(){
+			$(".days li").eq(0).show();
+			$(".btns li").eq(0).addClass("active");
+			$(".btns li").mouseover(function(){
+				$(this).addClass("active").siblings().removeClass("active");
+				var index = $(this).index();
+				$(".days li").eq(index).fadeIn(10).siblings().fadeOut(0);
+			})
+		})
+	</script>
+</head>
+
+<body>
+	<div id="st-container" class="st-container">
+		<nav class="st-menu st-effect-4">
+			<ul>
+				<li><img src="imgs/logo.png"><h2>你的软件合作者</h2></li>
+			  	<li><a class="ico home " href="index.html">EASY剧院</a></li>
+			  	<li><a class="ico services selected" href="logsell.html">使用登录</a></li>
+			  	<li><a class="ico login" href="logman.html">管理登录</a></li>
+			  	<li><a class="ico aboutus" href="aboutus.html">关于EASY</a></li>
+			  	<li><a class="ico contact" href="contact.html">联系我们</a></li>
+		  	</ul>
+		</nav>
+		<div class="st-pusher">
+			<div class="st-content">
+				<div class="st-content-inner">
+					<header>
+						<div id="st-trigger-effects">
+							<button data-effect="st-effect-4" id="menu-bars"></button>
+						</div>
+						<img src="imgs/logo.png">
+					</header>
+					<fieldset>
+						<legend><h1>影片信息</h1></legend>
+						<div style="border:2px dashed gray;border-radius: 5px; padding: 10px;">
+						<table >
+							<tr>
+								<th><img src="imgs/info1.jpg"></th>
+								<th style="color: gray;font-size: 12px;text-align: left;">
+								<div style="color: #57d6f5;font-size: 18px;text-align: center;">北京遇上西雅图</div>
+								<hr/>
+									<dl>
+									<div>
+									<dt>首映</dt>
+									<dd>2016-04-22</dd>
+									</div>
+									<div>
+									<dt>类型</dt>
+									<dd>爱情，喜剧，剧情</dd>
+									</div>
+									<div>
+									<dt>版本</dt>
+									<dd>2d</dd>
+									</div>
+									<div>
+									<dt>地区</dt>
+									<dd>大陆</dd>
+									</div>
+									<div>
+									<dt>时长</dt>
+									<dd>84分钟</dd>
+									</div>
+									<div>
+									<dt>导演</dt>
+									<dd>薛晓路</dd>
+									</div>
+									</dl>
+								</th>
+							</tr>
+						</table>
+						<div style="color: gray;font-size: 10px;">
+						<dt>主演:</dt>
+						<dd>汤唯，吴秀波，惠英红，秦沛，吴彦姝，颜卓灵，王志文，陆毅，祖峰，王茜，张一白，刘志宏，艾丽娅，李灿森，娜依，陈创</dd>
+						</div>
+						<hr/>
+						<div style="color: gray;font-size: 12px;">
+							<h5>剧情</h5>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本片讲述了焦姣（汤唯 饰）15岁就随父亲移民到澳门，从此在赌城安家，并成为赌场公关。罗大牛（吴秀波 饰）则生活在洛杉矶，是一位小小不言的房地产经纪人，这个世界上有他没他，不会有什么不同。姣爷和大牛原本就是两条根本不会有什么交集的平行线，却通过一本书，巧合地通过手写书信的方式互相联系...</p>
+						</div>
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend><h1>我要购票</h1></legend>
+						<div class="out" >
+						<ul class="btns" >
+							<li class="active"><b>5月10号</b></li>
+							<li ><b>5月11号</b></li>
+							<li ><b>5月12号</b></li>
+						</ul>
+						<ul class="days" style="padding: 0px;">
+						<li>
+							<table>
+							<tr>
+								<td><h4>CGV星聚汇影城(西安印象城店)</h4>
+								<dl style="color: gray;">
+									<dt>地址:</dt>
+									<span>未央区未央路33号龙首村未央印象城3楼</span>
+								</dl>
+								</td>
+								<td><p style="font-size: 20px; color: red;"><strong>¥26</strong></p>
+									<button type="button" class="sellinfo" >购票选座</button>
+								</td>
+							</tr>
+							<tr>
+								<td><h4>MRS中影国际影城(乐派店)</h4>
+								<dl style="color: gray;">
+									<dt>地址:</dt>
+									<span>未央区渭滨路乐派生活广场7层</span>
+								</dl>
+								</td>
+								<td><p style="font-size: 20px; color: red;"><strong>¥26</strong></p>
+									<button type="button" class="sellinfo">购票选座</button>
+								</td>
+							</tr>
+							<tr>
+								<td><h4>SFC上影(西安曲江龙湖店)</h4>
+								<dl style="color: gray;">
+									<dt>地址:</dt>
+									<span>雁塔区曲江新区新开门北路888号.龙湖星悦荟3楼</span>
+								</dl>
+								</td>
+								<td><p style="font-size: 20px; color: red;"><strong>¥26</strong></p>
+									<button type="button" class="sellinfo">购票选座</button>
+								</td>
+							</tr>
+							</table>
+						</li>
+						<li>
+							<table>
+							<tr>
+								<td><h4>奥斯卡长安国际影城</h4>
+								<dl style="color: gray;">
+									<dt>地址:</dt>
+									<span>长安区西长安街105号长安中央广场105号A座2楼（西北饭店斜对面)</span>
+								</dl>
+								</td>
+								<td><p style="font-size: 20px; color: red;"><strong>¥26</strong></p>
+									<button type="button" class="sellinfo">购票选座</button>
+								</td>
+							</tr>
+							<tr>
+								<td><h4>博纳国际影城(新天地店)</h4>
+								<dl style="color: gray;">
+									<dt>地址:</dt>
+									<span>雁塔区长安中路2号（纬二街十字西南角，雁塔文化新天地负1层)</span>
+								</dl>
+								</td>
+								<td><p style="font-size: 20px; color: red;"><strong>¥26</strong></p>
+									<button type="button" class="sellinfo">购票选座</button>
+								</td>
+							</tr>
+							<tr>
+								<td><h4>橙天嘉禾影城(怡丰店)</h4>
+								<dl style="color: gray;">
+									<dt>地址:</dt>
+									<span>碑林区太白立交西北角怡丰城3F</span>
+								</dl>
+								</td>
+								<td><p style="font-size: 20px; color: red;"><strong>¥26</strong></p>
+									<button type="button" class="sellinfo">购票选座</button>
+								</td>
+							</tr>
+							</table>
+						</li>
+						<li>
+							<table>
+							<tr>
+								<td><h4>大地影院(长安步行街店)</h4>
+								<dl style="color: gray;">
+									<dt>地址:</dt>
+									<span>长安区步行街北口长百新市购物广场三楼南区</span>
+								</dl>
+								</td>
+								<td><p style="font-size: 20px; color: red;"><strong>¥26</strong></p>
+									<button type="button" class="sellinfo">购票选座</button>
+								</td>
+							</tr>
+							<tr>
+								<td><h4>高景活力影城</h4>
+								<dl style="color: gray;">
+									<dt>地址:</dt>
+									<span>临潼区秦陵北路生力广场4层</span>
+								</dl>
+								</td>
+								<td><p style="font-size: 20px; color: red;"><strong>¥26</strong></p>
+									<button type="button" class="sellinfo">购票选座</button>
+								</td>
+							</tr>
+							<tr>
+								<td><h4>横店电影城(开远店)</h4>
+								<dl style="color: gray;">
+									<dt>地址:</dt>
+									<span>莲湖区大庆路与西二环十字西南角土门坊开远半岛广场5楼</span>
+								</dl>
+								</td>
+								<td><p style="font-size: 20px; color: red;"><strong>¥26</strong></p>
+									<button type="button" class="sellinfo">购票选座</button>
+								</td>
+							</tr>
+							</table>
+						</li>		
+						</ul>
+						</div>
+					</fieldset>				
+					<div id="div2">
+						<img src="imgs/men.png">
+					</div>
+					<div id="div1">
+						<div align="right">
+							<span id="span2"><b>取消</b></span>
+   						</div>
+   						<a href="seat.html"><button>巨幕厅</button></a>
+   						<a href="seat.html"><button>大大厅</button></a>
+   						<a href="seat.html"><button>大小厅</button></a>
+   						<a href="seat.html"><button>小小厅</button></a>
+					</div>
+					<footer>
+						<img src="imgs/logo.png">
+						<h3>详细信息：</h3>
+						<p>陕西省西安市西安邮电大学</p>
+						<h6>邮政编码: 710121</h6>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/sidebarEffects.js"></script>
+	<script src="js/swipers.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>
